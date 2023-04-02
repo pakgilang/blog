@@ -553,7 +553,7 @@ blockquote:after,.rtl blockquote:before{content:'\f10e';margin:0 0 0 10px}
 .alert-message.alert-info:before{content:"\f05a"}
 .alert-message.alert-warning:before{content:"\f06a"}
 .alert-message.alert-error:before{content:"\f057"}
-.post-body table{width:100%;overflow-x:auto;color:#212529;text-align:left;box-sizing:border-box;margin:0;border-collapse:collapse;border:1px solid rgba(155,155,155,0.17)}
+.post-body table{width:100%;overflow-x:auto;color:#212529;text-align:left;box-sizing:border-box;margin:20px 0;border-collapse:collapse;border:1px solid rgba(155,155,155,0.17)}
 .rtl .post-body table{text-align:right}
 .post-body table td,.post-body table th{box-sizing:border-box;padding:5px 15px;border:1px solid rgba(155,155,155,0.17)}
 .post-body table thead th{color:#ffffff;font-weight:900;vertical-align:bottom}
