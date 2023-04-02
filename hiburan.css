@@ -546,7 +546,7 @@ blockquote:after,.rtl blockquote:before{content:'\f10e';margin:0 0 0 10px}
 .post-body table{width:100%;overflow-x:auto;color:#212529;text-align:left;box-sizing:border-box;margin:0;border-collapse:collapse;border:1px solid rgba(155,155,155,0.17)}
 .rtl .post-body table{text-align:right}
 .post-body table td,.post-body table th{box-sizing:border-box;padding:5px 15px;border:1px solid rgba(155,155,155,0.17)}
-.post-body table thead th{color:#1f2024;font-weight:500;vertical-align:bottom}
+.post-body table thead th{color:#ffffff;font-weight:900;vertical-align:bottom}
 .post-body table tbody td{color:#161619}
 .post-body table::-webkit-scrollbar{height:3px;background:rgba(155,155,155,0.1)}
 .post-body table::-webkit-scrollbar-thumb{background:#ff4545;border-radius:3px}
@@ -1010,3 +1010,18 @@ footer .entry-meta, footer .label-count, footer .image-caption {color: #ffffff !
 .entry-content ol{margin:0;padding:0;list-style-type:none}.entry-content li{margin:.5em 0;text-indent:-1em;line-height:1.5}.entry-content ul{list-style:none;margin:0;padding:0}.entry-content li{padding:8px 0;border-bottom:1px solid #ccc}.entry-content li:last-child{border-bottom:none}
 .boxkalkulator {background: #ecf0f1;padding: 10px;border: 2px solid #607D8B;border-radius: 8px;margin-bottom:30px;}
 .hasilkalkulator {background: #ffffff;padding: 10px;width: auto;border: 1px solid #dee3e5;border-radius: 8px;}
+
+table{border-collapse:collapse;width:100%;font-size:14px;text-align:center}
+thead{background-color:#283d93}
+th,td{padding:8px;border:1px solid #ddd}
+th{font-weight:700;text-transform:uppercase}
+tr:hover{background-color:#f5f5f5}
+tr:nth-child(even){background-color:#f2f2f2}
+@media screen and (max-width: 767px) {
+table {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
