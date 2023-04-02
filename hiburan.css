@@ -1,119 +1,12 @@
-<!-- Variable definitions -->
-<Variable name="keycolor" description="Main Color" type="color" default="#ff4545"/>
-<Group description="Theme Widths" selector="body">
-<Variable name="row.width" description="Container Width" type="length" default="970px" min="960px" max="1063px"/>
-<Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px"/>
-</Group>
-<Group description="Theme Fonts" selector="body">
-<Variable name="main.font" description="Main Font" type="font" family="'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif" default="normal 400 14px $(family)" />
-<Variable name="meta.font" description="Meta Font" type="font" family="'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif" default="normal 400 14px $(family)" />
-<Variable name="text.font" description="Text Font" type="font" family="'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif" default="normal 400 14px $(family)" />
-</Group>
-<Group description="Theme Colors" selector="body">
-<Variable name="main.color" description="Theme Color" type="color" default="#ff4545"/>
-<Variable name="title.color" description="Title Color" type="color" default="#1f2024"/>
-<Variable name="title.hover.color" description="Title Hover Color" type="color" default="#ff4545"/>
-</Group>
-<Group description="Theme Body" selector="body">
-<Variable name="body.background.color" description="Body Background - Boxed" type="color" default="#f5f5f5" />
-<Variable name="body.background" description="Background" type="background" color="#f5f5f5" default="$(color) url() repeat scroll top left"/>
-<Variable name="outer.bg" description="Outer Wrapper Background" type="color" default="#ffffff" />
-<Variable name="body.text.color" description="Body Text Color" type="color" default="#656565" />
-<Variable name="body.link.color" description="Colored Links" type="color" default="#ff4545" />
-</Group>
-<Group description="Main Navbar" selector="div.navbar">
-<Variable name="navbar.bg" description="Navbar Background" type="color" default="#1f2024"/>
-<Variable name="navbar.color" description="Navbar Color" type="color" default="#e7e8e9"/>
-<Variable name="menu.color" description="Menu Color" type="color" default="#e7e8e9"/>
-<Variable name="item.hover.bg" description="Menu Link Hover Background" type="color" default="#ff4545"/>
-<Variable name="item.hover.color" description="Menu Link Hover Color" type="color" default="#ffffff"/>
-</Group>
-<Group description="Sub Menu" selector="div.navbar">
-<Variable name="submenu.bg" description="SubMenu Background" type="color" default="#26272b"/>
-<Variable name="submenu.color" description="SubMenu Color" type="color" default="#f2f2f2"/>
-<Variable name="subitem.hover.bg" description="SubMenu Link Hover Background" type="color" default="#1f2024"/>
-<Variable name="subitem.hover.color" description="SubMenu Link Hover Color" type="color" default="#ffffff"/>
-</Group>
-<Group description="Mega Menu" selector="div.navbar">
-<Variable name="megamenu.bg" description="MegaMenu Background" type="color" default="#26272b"/>
-<Variable name="megamenu.color" description="MegaMenu Color" type="color" default="#f2f2f2"/>
-<Variable name="megamenu.hover.color" description="MegaMenu Tab Active Color" type="color" default="#ffffff"/>
-<Variable name="megamenu.post.title.color" description="MegaMenu Post Title Color" type="color" default="#f2f2f2"/>
-<Variable name="megamenu.post.title.hover" description="MegaMenu Post Title Hover Color" type="color" default="#ff4545"/>
-</Group>
-<Group description="Breaking News" select="#breaking-wrap">
-<Variable name="breaking.bg" description="Breaking Background" type="color" default="#ff4545"/>
-<Variable name="breaking.color" description="Breaking Title Color" type="color" default="#ffffff"/>
-<Variable name="breaking.hover.color" description="Breaking Title Hover Color" type="color" default="#ffffff"/>
-</Group>
-<Group description="Blog Posts" select="#main-wrapper">
-<Variable name="post.title.color" description="Post Title Color" type="color" default="#1f2024"/>
-<Variable name="post.title.hover.color" description="Post Title Hover Color" type="color" default="#ff4545"/>
-<Variable name="post.text.color" description="Post Text Color" type="color" default="#222222"/>
-<Variable name="meta.color" description="Meta Color" type="color" default="#000"/>
-<Variable name="itempost.title.size" description="ItemPost Title Font Size" type="length" default="28px" min="20px" max="37px"/>
-<Variable name="itempost.content.size" description="ItemPost Text Font Size" type="length" default="15px" min="14px" max="20px"/>
-</Group>
-<Group description="Widget Title">
-<Variable name="main.wtitle.bg" description="Main Widget Title Background" type="color" default="#1f2024"/>
-<Variable name="main.wtitle.color" description="Main Widget Title Color" type="color" default="#ffffff"/>
-<Variable name="sidebar.wtitle.bg" description="Sidebar Widget Title Background" type="color" default="#1f2024"/>
-<Variable name="sidebar.wtitle.color" description="Sidebar Widget Title Color" type="color" default="#ffffff"/>
-<Variable name="tab.active.bg" description="Sidebar Tab Active Background" type="color" default="#ff4545"/>
-<Variable name="tab.active.color" description="Sidebar Tab Active Color" type="color" default="#ffffff"/>
-</Group>
-<Group description="Theme Buttons">
-<Variable name="button.bg" description="Colored Button" type="color" default="#ff4545"/>
-<Variable name="button.color" description="Colored Button Color" type="color" default="#ffffff"/>
-<Variable name="darkbutton.bg" description="Dark Button Background" type="color" default="#1f2024"/>
-<Variable name="darkbutton.color" description="Dark Button Color" type="color" default="#ffffff"/>
-</Group>
-<Group description="Theme Footer" selector="div.footer-widgets-wrap">
-<Variable name="footer.bg" description="Footer Background" type="color" default="#1f2024"/>
-<Variable name="footer.widget.title.color" description="Widget Title Color" type="color" default="#f2f2f2"/>
-<Variable name="footer.color" description="Footer Color" type="color" default="#f2f2f2"/>
-<Variable name="footer.hover.color" description="Footer Links Hover Color" type="color" default="#ff4545"/>
-<Variable name="footer.post.title.hover.color" description="Footer Post Title Hover Color" type="color" default="#ff4545"/>
-<Variable name="footer.text.color" description="Footer Text Color" type="color" default="#aaaaaa"/>
-</Group>
-<Group description="Footer Bar" selector="#sub-footer-wrapper">
-<Variable name="footer.bar.bg" description="Footer Bar Background" type="color" default="#161619"/>
-<Variable name="footer.bar.color" description="Footer Bar Color" type="color" default="#f2f2f2"/>
-<Variable name="footer.bar.hover.color" description="Footer Bar Links Hover Color" type="color" default="#ff4545"/>
-</Group>
-<!-- Main Font -->
-<Variable name="mainfont.medium" description="Main Font Medium" hideEditor="true" type="font" default="normal 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.semibold" description="Main Font SemiBold" hideEditor="true" type="font" default="normal 600 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.bold" description="Main Font Bold" hideEditor="true" type="font" default="normal 700 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.italic" description="Main Font Italic" hideEditor="true" type="font" default="italic 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.mediumitalic" description="Main Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.semibolditalic" description="Main Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="mainfont.bolditalic" description="Main Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<!-- Meta Font -->
-<Variable name="metafont.medium" description="Meta Font Medium" hideEditor="true" type="font" default="normal 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="metafont.semibold" description="Meta Font SemiBold" hideEditor="true" type="font" default="normal 600 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="metafont.bold" description="Meta Font Bold" hideEditor="true" type="font" default="normal 700 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<!-- Text Font -->
-<Variable name="textfont.medium" description="Text Font Medium" hideEditor="true" type="font" default="normal 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.semibold" description="Text Font SemiBold" hideEditor="true" type="font" default="normal 600 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.bold" description="Text Font Bold" hideEditor="true" type="font" default="normal 700 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.italic" description="Text Font Italic" hideEditor="true" type="font" default="italic 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.mediumitalic" description="Text Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.semibolditalic" description="Text Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<Variable name="textfont.bolditalic" description="Text Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px 'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif"/>
-<!-- Comments Default -->
-<Variable name="body.text.font" description="Font" hideEditor="true" type="font" default="14px 'Lato', sans-serif" />
-<Variable name="tabs.font" description="Font 2" hideEditor="true" type="font" default="14px 'Lato', sans-serif" />
-<Variable name="posts.background.color" description="Post Background" hideEditor="true" type="color" default="#ffffff" />
-<Variable name="posts.title.color" description="Post title color" hideEditor="true" type="color" default="#1f2024" />
-<Variable name="posts.text.color" description="Post text color" hideEditor="true" type="color" default="#161619" />
-<Variable name="posts.icons.color" description="Post icons color" hideEditor="true" type="color" default="#ff4545" />
-<Variable name="labels.background.color" description="Label background color" hideEditor="true" type="color" default="#ff4545" />
-/*-- Reset CSS --*/
-a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{padding:0;border:0;outline:0;vertical-align:baseline;background:0 0;text-decoration:none}form,textarea,input,button{-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0}dl,ul{list-style-position:inside;font-weight:400;list-style:none}ul li{list-style:none}caption,th{text-align:center}img{border:none;position:relative}a,a:visited{text-decoration:none}.clearfix{clear:both}.section,.widget,.widget ul{margin:0;padding:0}a{color:#ff4545}a img{border:0}abbr{text-decoration:none}.CSS_LIGHTBOX{z-index:999999!important}.CSS_LIGHTBOX_ATTRIBUTION_INDEX_CONTAINER .CSS_HCONT_CHILDREN_HOLDER > .CSS_LAYOUT_COMPONENT.CSS_HCONT_CHILD:first-child > .CSS_LAYOUT_COMPONENT{opacity:0}.separator a{clear:none!important;float:none!important;margin-left:0!important;margin-right:0!important}#navbar-iframe,.widget-item-control,a.quickedit,.home-link,.feed-links{display:none!important}.center{display:table;margin:0 auto;position:relative}.widget > h2,.widget > h3{display:none}.widget iframe,.widget img{max-width:100%}
-/*-- Body Content CSS --*/
-:root{--body-font:'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif;--meta-font:'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif;--text-font:'Lato',Segoe UI,Helvetica Neue,Arial,sans-serif}
-body{position:relative;background-color:#f5f5f5;background:#f5f5f5 url() repeat scroll top left;font-family:var(--body-font);font-size:14px;color:#222222;font-weight:400;font-style:normal;line-height:1.4em;word-wrap:break-word;margin:0;padding:0}
+/*-- Google Font --*/
+@font-face{font-family:'Lato';font-style:italic;font-weight:400;src:local('Lato Italic'),local(Lato-Italic),url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Lato';font-style:italic;font-weight:400;src:local('Lato Italic'),local(Lato-Italic),url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-q.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display: swap;}
+@font-face{font-family:'Lato';font-style:italic;font-weight:700;src:local('Lato Bold Italic'),local(Lato-BoldItalic),url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Lato';font-style:italic;font-weight:700;src:local('Lato Bold Italic'),local(Lato-BoldItalic),url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display: swap;}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;src:local('Lato Regular'),local(Lato-Regular),url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;src:local('Lato Regular'),local(Lato-Regular),url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display: swap;}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;src:local('Lato Bold'),local(Lato-Bold),url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;src:local('Lato Bold'),local(Lato-Bold),url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display: swap;}
 
 .rtl{direction:rtl}
 .no-items.section{display:none}
