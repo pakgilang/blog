@@ -23,8 +23,8 @@ lazyOnScroll();});}}(jQuery);
 const entryContent=document.querySelector(".entry-content");if(entryContent.innerText.toLowerCase().includes("#dewasa")){const a=document.createElement("div");a.classList.add("popup");const b=document.createElement("p");b.innerText="Apakah Anda sudah berumur 18+?",a.appendChild(b);const c=document.createElement("button");c.innerText="Sudah",c.addEventListener("click",()=>{a.remove()}),a.appendChild(c);const d=document.createElement("button");d.innerText="Belum",d.addEventListener("click",()=>{window.location.href="https://www.hiburan.web.id/"}),a.appendChild(d),document.body.appendChild(a)}
 
 /*! ubah gambar ke webp */
-function convertImageSrcToWebpAndResize(){var e=document.querySelectorAll('img[src$=".jpg"]'),t=document.querySelectorAll('a[href$=".jpg"]');e.forEach(function(e){var t=e.src.replace(/(\d+)/(.*).jpg$/,"$1-rw/$2.webp");e.src=t}),t.forEach(function(e){var t=e.href.replace(/(\d+)/(.*).jpg$/,"$1-rw/$2.webp");e.href=t})}window.location.href.startsWith("https://www.hiburan.web")&&(convertImageSrcToWebpAndResize(),window.addEventListener("resize",convertImageSrcToWebpAndResize)),console.log("Memory penuh");
-
+const images=document.querySelectorAll('img');images.forEach((e=>{const t=e.getAttribute("src"),n=t.substring(t.lastIndexOf("/")+1,t.lastIndexOf(".")).replace(/-/g," ");e.setAttribute("alt",n),e.setAttribute("title",n)}));
+                                              
 /*! auto alt dan title berdasarkan nama */
 document.addEventListener("DOMContentLoaded",function(){for(var t=document.getElementsByTagName("img"),e=0;e<t.length;e++){var n=t[e].getAttribute("src");-1!==n.lastIndexOf("/")&&(n=(n=(n=n.substring(n.lastIndexOf("/")+1)).substring(0,n.lastIndexOf("."))).replace(/-/g," "),t[e].setAttribute("alt",n),t[e].setAttribute("title",n))}});
 
