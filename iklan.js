@@ -21,10 +21,7 @@ lazyOnScroll();});}}(jQuery);
 
 /*! cek kata #dewasa */
 const entryContent=document.querySelector(".entry-content");if(entryContent.innerText.toLowerCase().includes("#dewasa")){const a=document.createElement("div");a.classList.add("popup");const b=document.createElement("p");b.innerText="Apakah Anda sudah berumur 18+?",a.appendChild(b);const c=document.createElement("button");c.innerText="Sudah",c.addEventListener("click",()=>{a.remove()}),a.appendChild(c);const d=document.createElement("button");d.innerText="Belum",d.addEventListener("click",()=>{window.location.href="https://www.hiburan.web.id/"}),a.appendChild(d),document.body.appendChild(a)}
-
-/*! Custom image */
-function convertImageSrcToWebpAndResize(){if(window.location.href.startsWith("https://www.hiburan.web")){for(var e,t=document.getElementsByTagName("img"),r=0;r<t.length;r++)t[r].src.endsWith(".jpg")&&(e=t[r].src.replace(/(\d+)\/(.*)\.jpg$/,"$1-rw/$2.webp"),t[r].setAttribute("src",e));for(var n,o=document.getElementsByTagName("a"),r=0;r<o.length;r++)o[r].href.endsWith(".jpg")&&(n=o[r].href.replace(/(\d+)\/(.*)\.jpg$/,"$1-rw/$2.webp"),o[r].setAttribute("href",n))}else console.log("memory penuh")}convertImageSrcToWebpAndResize(),window.addEventListener("resize",function(){convertImageSrcToWebpAndResize()});
-                                             
+                                            
 /*! alt dan title */
 const images=document.querySelectorAll('img');images.forEach((e=>{const t=e.getAttribute("src"),n=t.substring(t.lastIndexOf("/")+1,t.lastIndexOf(".")).replace(/-/g," ");e.setAttribute("alt",n),e.setAttribute("title",n)}));
                                               
